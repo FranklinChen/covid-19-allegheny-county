@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>COVID-19 in Allegheny County, Pennsylvania (updated daily)</title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>COVID-19 in Allegheny County, Pennsylvania (updated daily)</title>
+    </head>
 
-  <body>
-    <header>
-      <h1><a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/COVID-19.aspx">COVID-19
-          in Allegheny County, Pennsylvania</a> (updated daily)</h1>
-    </header>
+    <body>
+        <header>
+            <h1><a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/COVID-19.aspx">COVID-19
+                in Allegheny County, Pennsylvania</a> (updated daily)</h1>
+        </header>
 
-    <aside>
-      Last updated: Wed Nov 18, 11:01 AM
-    </aside>
+        <aside>
+            Last updated: Wed Nov 18, 6:23 PM
+        </aside>
 
-    <section>
-      <h2 style="color: #ff6700">Important announcements</h2>
-      <p>You can now download and use the official <a href="https://www.pa.gov/covid/covid-alert-pa/">COVID Alert PA mobile app</a>!
-        </p>
+        <section>
+            <h2 style="color: #ff6700">Important announcements</h2>
+            <p>You can now download and use the official <a href="https://www.pa.gov/covid/covid-alert-pa/">COVID Alert PA mobile app</a>!
+            </p>
 
-      <ul>
-          <li>Tue Nov 17: new PA strengthened travel and mask <a href="https://www.media.pa.gov/Pages/Health-Details.aspx?newsid=1140">orders</a>:
-              <ul>
-                  <li>
-                      <p>Dr. Levine issued an order requiring anyone who visits from another state to have a negative COVID-19 test within 72 hours prior to entering the commonwealth.
+            <ul>
+                <li>Wed Nov 18: Allegheny County has issued a <strong>Stay at Home and Stop Social Gatherings Public Health Advisory</strong>.
+                    <li>Tue Nov 17: new PA strengthened travel and mask <a href="https://www.media.pa.gov/Pages/Health-Details.aspx?newsid=1140">orders</a>:
+                        <ul>
+                            <li>
+                                <p>Dr. Levine issued an order requiring anyone who visits from another state to have a negative COVID-19 test within 72 hours prior to entering the commonwealth.</p>
 
-                      <p>If someone cannot get a test or chooses not to, they must quarantine for 14 days upon arrival in Pennsylvania.
+                                <p>If someone cannot get a test or chooses not to, they must quarantine for 14 days upon arrival in Pennsylvania.</p>
 
-                      <p>Pennsylvanians visiting other states are required to have a negative COVID-19 test within 72 hours prior to their return to the commonwealth or to quarantine for 14 days upon return to Pennsylvania.
+                                <p>Pennsylvanians visiting other states are required to have a negative COVID-19 test within 72 hours prior to their return to the commonwealth or to quarantine for 14 days upon return to Pennsylvania.</p>
 
-                      <p>This order, which takes effect on Friday, November 20, does not apply to people who commute to and from another state for work or medical treatment.
-                          <li>
-                              <p>Masks are required to be worn indoors and outdoors if you are away from your home.
-                                  <p>When <em>outdoors</em>, a mask must be worn if you are not able to remain physically distant (at least 6 feet away) from someone not in your household the entire time you are outdoors.
-                                      <p>When <em>indoors</em>, masks will now be required even if you are physically distant from members not in your household. This means that <strong>even if you are able to be 6 feet apart</strong>, you will need to wear a mask while inside if with people other than members of your household.
-                              <p>This order applies to every indoor facility, including homes, retail establishments, gyms, doctors’ offices, public transportation, and anywhere food is prepared, packaged or served.
+                                <p>This order, which takes effect on Friday, November 20, does not apply to people who commute to and from another state for work or medical treatment.</p>
+                            </li>
+                            <li>
+                                <p>Masks are required to be worn indoors and outdoors if you are away from your home.</p>
+                                <p>When <em>outdoors</em>, a mask must be worn if you are not able to remain physically distant (at least 6 feet away) from someone not in your household the entire time you are outdoors.</p>
+                                <p>When <em>indoors</em>, masks will now be required even if you are physically distant from members not in your household. This means that <strong>even if you are able to be 6 feet apart</strong>, you will need to wear a mask while inside if with people other than members of your household.</p>
+                                <p>This order applies to every indoor facility, including homes, retail establishments, gyms, doctors’ offices, public transportation, and anywhere food is prepared, packaged or served.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx">PA recommended 14-day self-quarantine if traveled to one of these states...</a>
+                    </li>
+            </ul>
+        </section>
 
-              </ul>
-        <li><a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx">PA recommended 14-day self-quarantine if traveled to one of these states...</a>
-      </ul>
-    </section>
+        <section>
+            <h2 id="graphs">Graphs</h2>
+            <p>
+                You may wish to use the <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Monitoring-Dashboard.aspx">PA COVID-19 Early Warning Monitoring System Dashboard</a> Web app to see more data.
+            </p>
+            <nav>
+                <ul>
+                    <li><a href="#dailyaveraged">Daily cases; daily hospitalizations and deaths</a>
+                    </li>
+                    <li><a href="#total">Total cases; total hospitalizations and deaths</a>
+                    </li>
+                </ul>
+            </nav>
+            <figure id="dailyaveraged">
+                <img src="dailyaveraged.png" alt="Allegheny County: new daily (7-day-average)"/>
+            </figure>
+            <figure id="total">
+                <img src="total.png" alt="Allegheny County: total"/>
+            </figure>
+        </section>
+        <footer>
+            <a href="https://github.com/FranklinChen/covid-19-allegheny-county">My GitHub repo</a> for the raw data from which these graphs were generated.
+        </footer>
 
-    <section>
-      <h2 id="graphs">Graphs</h2>
-      <p>
-        You may wish to use the <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Monitoring-Dashboard.aspx">PA COVID-19 Early Warning Monitoring System Dashboard</a> Web app to see more data.
-      </p>
-      <nav>
-        <ul>
-          <li><a href="#dailyaveraged">Daily cases; daily hospitalizations and deaths</a>
-          <li><a href="#total">Total cases; total hospitalizations and deaths</a>
-        </ul>
-      </nav>
-      <figure id="dailyaveraged">
-        <img src="dailyaveraged.png" alt="Allegheny County: new daily (7-day-average)"/>
-      </figure>
-      <figure id="total">
-        <img src="total.png" alt="Allegheny County: total"/>
-      </figure>
-    </section>
-    <footer>
-      <a href="https://github.com/FranklinChen/covid-19-allegheny-county">My GitHub repo</a> for the raw data from which these graphs were generated.
-    </footer>
-
-  </body>
+    </body>
 </html>
