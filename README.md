@@ -1,6 +1,6 @@
 # COVID-19 stats for Allegheny County, PA
 
-I update the [CSV file](covid-19-allegheny-county.csv) every day at 11 AM 
+I update the [CSV file](covid-19-allegheny-county.csv) every weekday at 12 PM
 when I receive an official email from the mailing list I signed up for at
 [Allegheny Alerts](http://www.alleghenycounty.us/alerts).
 
